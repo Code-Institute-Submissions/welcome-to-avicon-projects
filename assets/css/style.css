@@ -8,22 +8,22 @@
 }
 
 .color-aboutus {
-    background-color: #D7BDE2;
+    background-color: #D2B4DE;
 }
 
 .color-services {
-    background-color: #AED6F1;
+    background-color: #7FB3D5;
 }
 
 .color-contact {
-    background-color: #D5DBDB;
+    background-color: #BFC9CA;
 }
 
 
 /* -------------------Header------------------ */
 
 .col h1 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Open-Sans", sans-serif;
     text-align: center;
     margin-top: 0;
     padding-top: 5px;
@@ -37,8 +37,7 @@
     font-family: "Roboto", sans-serif;
     text-align: center;
     font-weight: 300;
-    font-size: 30px;
-    letter-spacing: 1.5px;
+    font-size: 24px;
     text-transform: uppercase;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -53,15 +52,17 @@
     font-size: 0;
 }
 
-ul li {
-    font-size: 20px;
+#nav li {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
     padding: 0;
 }
 
 .menuitem {
-    height: 60px;
+    height: 100px;
     text-align: center;
-    padding: 50px;
+    padding: 0px;
 }
 
 .menuitem a {
@@ -71,69 +72,126 @@ ul li {
     padding-top: 20px;
 }
 
+.menuitem a i {
+  display: block;
+  color: #fafafa;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
 .menuitem span {
-    font-family: "Rubik", sans-serif;
+    display: block;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 22px;
     letter-spacing: 2px;
-    color: #1027d4;
+    color: #fff;
 }
 
 
+/* -------------------Hover------------------ */
+
+.hvr-sweep-to-bottom::before {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100px;
+}
+
+.social-links li a i:hover {
+    background: #707b77;
+}
 
 /* -------------------Callout------------------ */
 
+
+
 .heroimage {
-    height: 1200px;
+    height: 100vh;
     background-image: url(../images/heroimage.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-.callout {
+  .callout { 
     font-family: "Rubik", sans-serif;
+    font-size: 48px;
     text-align: center;
-    font-weight: 400;
-    font-size: 52px;
-    color: darkslateblue;
-    padding: 100px;
+    font-weight: 200;
+    
+    color: #fff;
+    padding-top: 20px;
 }
 
 
 /* -------------------Reviews------------------ */
 
 .reviews {
-    height: 600px;
-    background-color: red;
-}
-
-
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
     height: 400px;
+    background-color: #BFC9CA;
 }
+
+
+
+
 
 /* -------------------Footer------------------ */
 
-.footer_about {
-    background-color: blue;
+footer {
+    background-color: #fff;
+    color: #707b77;
+    font-weight: 400;
+    min-height: 80px;
+    margin: 0;
 }
 
-.footer_got_a_project {
-    background-color: pink;
+#footer-details {
+    padding: 25px;
 }
 
-.footer_social {
-    background-color: yellow;
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: "Open-Sans", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: #707b77;
+    margin-top: 10px;
+}
+
+.inline-block {
+    margin-top: 30px;
+    font-size: 18px;
 }
 
 
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #0B25D7;
+    
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
 
 /* -------------------Media Queries------------------ */
 
@@ -144,5 +202,10 @@ ul li {
 
   @media screen and (max-width: 800px) {
   .column {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 600px) {
+  .container-fluid {
     width: 100%;
   }
