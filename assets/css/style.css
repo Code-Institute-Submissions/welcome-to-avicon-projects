@@ -103,8 +103,6 @@
 
 /* -------------------Callout------------------ */
 
-
-
 .heroimage {
     height: 100vh;
     background-image: url(../images/heroimage.jpg);
@@ -136,10 +134,17 @@
 
 .reviews {
     height: 400px;
-    background-color: #BFC9CA;
+    background-color: #F2F3F4;
 }
 
-
+.heading {
+    font-family: "Rubik", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #707b77;
+    margin-top: 10px;
+}
 
 
 
@@ -174,23 +179,30 @@ footer {
     font-size: 18px;
 }
 
+.btn-outline-primary {
+    padding: 10px;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    }
 
 .social-links li a i {
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     padding: 12px 0;
     border-radius: 50%;
     margin-top: 20px;
-    font-size: 13px;
-    line-height: 7px;
+    font-size: 20px;
+    line-height: 10px;
     text-align: center;
     color: #fafafa;
     background: #0B25D7;
     
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
 
 /* -------------------Media Queries------------------ */
