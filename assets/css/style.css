@@ -134,17 +134,19 @@
 
 .reviews {
     height: 400px;
-    background-color: #F2F3F4;
+    background-color: #FBFCFC;
 }
 
 .heading {
-    font-family: "Rubik", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 100;
     font-size: 20px;
     text-transform: uppercase;
     color: #707b77;
-    margin-top: 10px;
+    padding-top: 20px;
 }
+
+
 
 
 
