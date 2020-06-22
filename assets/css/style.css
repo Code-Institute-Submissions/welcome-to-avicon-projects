@@ -132,22 +132,48 @@
 
 /* -------------------Reviews------------------ */
 
-.reviews {
+.color-background {
     height: 400px;
     background-color: #FBFCFC;
 }
 
-.heading {
+.review-header {
     font-family: "Open Sans", sans-serif;
     font-weight: 100;
     font-size: 20px;
+    text-align: center;
     text-transform: uppercase;
-    color: #707b77;
-    padding-top: 20px;
+    color: #707b77; 
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.blockquote {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #707b77; 
+}
+
+/* Block dividers */
+
+.block-divider {
+    width: 90px;
+    height: 5px;
+    border: 0;
+    margin-top: 10px;
+    background-color: #0B25D7;
 }
 
 
+/* Content containers */
 
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
 
 
 /* -------------------Footer------------------ */
@@ -181,7 +207,7 @@ footer {
     font-size: 18px;
 }
 
-.btn-outline-primary {
+.btn-outline-success {
     padding: 10px;
     font-family: "Rubik", sans-serif;
     text-transform: uppercase;
