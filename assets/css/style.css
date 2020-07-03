@@ -5,7 +5,7 @@
         font-family: sans-serif;
 }
 
-/* -------------------Colors------------------ */
+/* ------------------- Menu Colors------------------ */
 
 .color-home {
     background-color: #A9DFBF;
@@ -23,8 +23,8 @@
     background-color: #BFC9CA;
 }
 
-/* -------------------Header------------------ */
 
+/* -------------------Header------------------ */
 .col h1 {
     font-family: "Open-Sans", sans-serif;
     text-align: center;
@@ -104,6 +104,11 @@
     background: #707b77;
 }
 
+.btn:hover {
+    opacity: 1;
+} 
+
+
 /* -------------------Hero Section------------------ */
 
 .hero {
@@ -140,7 +145,7 @@
 
 .hero .btn {
     display: block;
-    width: 200px;
+    width: 15%;
     padding: 10px;
     margin-top: 25px;
     margin-left: auto;
@@ -148,21 +153,15 @@
     
     color: #fff; 
     text-decoration: none;
-    font-size: 24px;
+    font-size: 22px;
 
-    border: 3px solid #fff;
-    border-radius: 20px;
-    background-color: #D2B4DE;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #7FB3D5;
 }
 
 
 /* -------------------Reviews------------------ */
-
-.container-wrapper {
-    height: 400px;
-    padding: 25px;
-    background-color: #FEF5E7;
-}
 
 .review-header {
     font-family: "Open Sans", sans-serif;
@@ -203,13 +202,19 @@
 /* -------------------Block Dividers------------------ */
 
 .block-divider--solid {
-  border-top: 5px solid lightgray;
+  border-top: 3px solid lightgray;
 }
 
 .block-divider--short {
   width: 100px;
   display: center;
   border-color: #0B25D7;
+}
+
+.block-divider-contact {
+  width: 70%;
+  display: center;
+  border-color: #fff;
 }
 
 /* -------------------Containers------------------ */
@@ -220,7 +225,13 @@
 }
 
 .container-fluid {
+    padding: 0px;
+}
+
+.container-wrapper {
+    height: 500px;
     padding: 30px;
+    background-color: #FEF5E7;
 }
 
 /* -------------------Footer------------------ */
@@ -231,6 +242,7 @@ footer {
     font-weight: 400;
     min-height: 80px;
     margin: 0;
+    padding: 20px;
 }
 
 #footer-details {
@@ -289,6 +301,7 @@ footer {
     -o-transition: all 0.5s ease-in-out;
 }
 
+
 /* -------------------About Us page------------------ */
 
 .column-layout {
@@ -311,7 +324,76 @@ footer {
     flex: 1;
 }
 
+/* -------------------Services page------------------ */
 
+
+
+
+/* -------------------Contact page------------------ */
+
+.bg-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../images/skyline.jpg);
+    min-height: 100vh;
+    min-width: 100vw;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.contact-heading {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+    color: #fff;
+    padding: 30px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.sub-contact-heading {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #fff;
+    padding-top: 20px;
+    margin: auto;
+   
+    transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+}
+
+.center-form {
+    padding-top: 50px;
+    margin: 0 auto;
+    max-width: 50%;
+    color: #fff;
+}
+
+#projectsummary {
+    height: 250px;
+}
+
+.btn-secondary {
+    display: block;
+    width: 20%;
+    padding: 10px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    color: #fff; 
+    text-decoration: none;
+    font-size: 22px;
+
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #7FB3D5;
+}
 
 
 /* -------------------Media Queries------------------ */
@@ -337,3 +419,14 @@ footer {
   .container-fluid {
     width: 100%;
   }
+
+  @media(min-width: 992px) {
+  .center-form {
+    padding-top: 30px;
+    min-height: 240px;
+    margin: 0 auto;
+    max-width: 50%;
+  }
+  }
+
+  
