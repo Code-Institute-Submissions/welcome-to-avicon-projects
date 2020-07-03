@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+    body {
+        margin: 0;
+        font-family: sans-serif;
+}
 
 /* -------------------Colors------------------ */
 
@@ -19,14 +23,13 @@
     background-color: #BFC9CA;
 }
 
-
 /* -------------------Header------------------ */
 
 .col h1 {
     font-family: "Open-Sans", sans-serif;
     text-align: center;
     margin-top: 0;
-    padding-top: 5px;
+    padding-top: 10px;
     font-weight: 400;
     font-size: 80px;
     letter-spacing: 1.5px;
@@ -101,32 +104,55 @@
     background: #707b77;
 }
 
-/* -------------------Callout------------------ */
+/* -------------------Hero Section------------------ */
 
-.heroimage {
+.hero {
+    width: 100vw;
     height: 100vh;
-    background-image: url(../images/heroimage.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../images/heroimage.jpg);;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-  .callout { 
-    font-family: "Rubik", sans-serif;
-    font-size: 48px;
-    text-align: center;
-    font-weight: 200;
+.hero h1 {
+     font-family: "Roboto", sans-serif;
+     font-weight: 300;
+     font-size: 80px;
+     margin-top: 0;
+     margin-bottom: 8px;
+}
+
+.hero h2 {
+     font-family: "Roboto", sans-serif;
+     font-weight: 300;
+     font-size: 32px;
+     margin-top: 0;
+     margin-bottom: 8px;
+}
+
+.hero .btn {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
     
-    color: #fff;
-    padding-top: 20px;
+    color: #fff; 
+    text-decoration: none;
+    font-size: 24px;
+
+    border: 3px solid #fff;
+    border-radius: 20px;
+    background-color: #D2B4DE;
 }
 
 
@@ -174,29 +200,33 @@
     color: #707b77;
 }
 
-/* Block dividers */
+/* -------------------Block Dividers------------------ */
 
-.block-divider {
-    width: 90px;
-    height: 5px;
-    border: 0;
-    margin-top: 10px;
-    background-color: #0B25D7;
+.block-divider--solid {
+  border-top: 5px solid lightgray;
 }
 
+.block-divider--short {
+  width: 100px;
+  display: center;
+  border-color: #0B25D7;
+}
 
-/* Content containers */
+/* -------------------Containers------------------ */
 
-.content-container {
+.container {
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
+.container-fluid {
+    padding: 30px;
+}
 
 /* -------------------Footer------------------ */
 
 footer {
-    background-color: #fff;
+    background-color: #F5F5F5;
     color: #707b77;
     font-weight: 400;
     min-height: 80px;
@@ -207,25 +237,33 @@ footer {
     padding: 25px;
 }
 
-.uppercase {
-    text-transform: uppercase;
-}
-
 .general-sub {
     font-family: "Open-Sans", sans-serif;
     font-weight: 500;
     font-size: 28px;
+    text-transform: uppercase;
+    color: #707b77;
+    margin-top: 10px;
+}
+
+.about-sub {
+    font-family: "Open-Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
     color: #707b77;
     margin-top: 10px;
 }
 
 .inline-block {
-    margin-top: 30px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 200;
     font-size: 18px;
-    text-transform: uppercase;
+    margin-top: 30px;
 }
 
-.btn-outline-success {
+.btn-outline-dark {
+    margin-top: 18px;
     padding: 10px;
     font-family: "Rubik", sans-serif;
     text-transform: uppercase;
@@ -238,7 +276,7 @@ footer {
     height: 35px;
     padding: 12px 0;
     border-radius: 50%;
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 20px;
     line-height: 10px;
     text-align: center;
@@ -251,17 +289,49 @@ footer {
     -o-transition: all 0.5s ease-in-out;
 }
 
+/* -------------------About Us page------------------ */
+
+.column-layout {
+    background-color: #fff;
+    margin: 10px auto 0 auto;
+    line-height: 1.65;
+    padding: 10px 30px; 
+    display: flex;
+}
+
+.left-column {
+    flex: 1;
+}
+
+.center-column {
+    flex: 2;
+}
+
+.right-column {
+    flex: 1;
+}
+
+
+
+
 /* -------------------Media Queries------------------ */
 
-@media screen and (max-width: 600px) {
-  .column {
+  @media (min-width: 576px) { 
+ .container {
+    width: 100%;
+  }
+
+  
+  @media screen and (max-width: 600px) {
+  .container {
     width: 100%;
   }
 
   @media screen and (max-width: 800px) {
-  .column {
+  .container {
     width: 100%;
   }
+
 
   @media screen and (max-width: 600px) {
   .container-fluid {
