@@ -31,7 +31,7 @@ body {
     margin-top: 0;
     padding-top: 10px;
     font-weight: 400;
-    font-size: 80px;
+    font-size: 84px;
     letter-spacing: 1.5px;
     color: #707b77;
 }
@@ -104,10 +104,34 @@ body {
     background: #707b77;
 }
 
-.btn:hover {
-    opacity: 1;
-} 
+/* -------------------Buttons------------------ */
 
+.contact-hero-btn {
+    padding: 10px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    color: #fff; 
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 20px;
+
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #0c24d3;
+}
+
+.btn-outline-dark {
+    margin-top: 18px;
+    padding: 10px;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    }
 
 /* -------------------Hero Section------------------ */
 
@@ -129,37 +153,20 @@ body {
 
 .hero h1 {
      font-family: "Roboto", sans-serif;
+     letter-spacing: 1px;
      font-weight: 300;
-     font-size: 80px;
+     font-size: 84px;
      margin-top: 0;
-     margin-bottom: 8px;
+     margin-bottom: 10px;
 }
 
 .hero h2 {
      font-family: "Roboto", sans-serif;
      font-weight: 300;
-     font-size: 32px;
-     margin-top: 0;
-     margin-bottom: 8px;
+     font-size: 38px;
+     margin-top: 25px;
+     margin-bottom: 10px;
 }
-
-.hero .btn {
-    display: block;
-    width: 15%;
-    padding: 10px;
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    color: #fff; 
-    text-decoration: none;
-    font-size: 22px;
-
-    border: 2px solid #fff;
-    border-radius: 10px;
-    background-color: #7FB3D5;
-}
-
 
 /* -------------------Reviews------------------ */
 
@@ -274,15 +281,6 @@ footer {
     margin-top: 30px;
 }
 
-.btn-outline-dark {
-    margin-top: 18px;
-    padding: 10px;
-    font-family: "Rubik", sans-serif;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 18px;
-    }
-
 .social-links li a i {
     width: 35px;
     height: 35px;
@@ -376,23 +374,6 @@ footer {
 
 #projectsummary {
     height: 250px;
-}
-
-.btn-secondary {
-    display: block;
-    width: 20%;
-    padding: 10px;
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    color: #fff; 
-    text-decoration: none;
-    font-size: 22px;
-
-    border: 2px solid #fff;
-    border-radius: 10px;
-    background-color: #7FB3D5;
 }
 
 
