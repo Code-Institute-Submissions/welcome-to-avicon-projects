@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-body {
-    margin: 0;
-    font-family: sans-serif;
-}
 
 /* ------------------- Menu Colors------------------ */
 
@@ -302,34 +298,85 @@ footer {
 
 /* -------------------About Us page------------------ */
 
-.column-layout {
-    background-color: #fff;
-    margin: 10px auto 0 auto;
-    line-height: 1.65;
-    padding: 10px 30px; 
-    display: flex;
+.about-us {
+    margin-bottom: 15px;
 }
 
-.left-column {
-    flex: 1;
-}
+.bg-img-aboutus {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../images/avicon.jpg);
+    min-height: 80vh;
+    min-width: 20vw;
 
-.center-column {
-    flex: 2;
-}
-
-.right-column {
-    flex: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 /* -------------------Services page------------------ */
 
+.services-section{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../images/12.jpg);
+  background-attachment: fixed;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-size: cover;
+  padding: 60px 0;
+}
 
+.inner-width{
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.section-title{
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  padding: 30px;
+  font-size: 75px;
+}
+
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box{
+  font-family: "Rubik", sans-serif;
+  max-width: 33.33%;
+  margin-top: 20px;
+  padding: 60px;
+  text-align: center;
+}
+
+.service-title{
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.service-desc{
+  padding: 15px;  
+  font-size: 16px;
+  color: #fff;
+}
+
+.service-box:hover {
+  background-color: rgba(11, 37, 215, 0.5);
+  border-radius: 50px;
+}
 
 
 /* -------------------Contact page------------------ */
 
-.bg-img {
+.bg-img-contact {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../images/skyline.jpg);
     min-height: 100vh;
     min-width: 100vw;
@@ -379,26 +426,29 @@ footer {
 
 /* -------------------Media Queries------------------ */
 
+  
   @media (min-width: 576px) { 
  .container {
     width: 100%;
   }
-
+  }
   
   @media screen and (max-width: 600px) {
   .container {
     width: 100%;
+  }
   }
 
   @media screen and (max-width: 800px) {
   .container {
     width: 100%;
   }
-
+  }
 
   @media screen and (max-width: 600px) {
   .container-fluid {
     width: 100%;
+  }
   }
 
   @media(min-width: 992px) {
@@ -409,3 +459,24 @@ footer {
     max-width: 50%;
   }
   }
+
+@media screen and (max-width:960px) {
+  .service-box{
+    max-width: 45%;
+  }
+  }
+
+@media screen and (max-width:768px) {
+  .service-box{
+    max-width: 50%;
+  }
+  }
+
+@media screen and (max-width:600px) {
+  .service-box{
+    max-width: 100%;
+  }
+  }
+
+
+
