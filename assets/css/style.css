@@ -20,8 +20,6 @@
 
 /* -------------------Header------------------ */
 
-
-
 .header {
   align-content: center;
 }
@@ -278,6 +276,7 @@
 
 .block-divider-contact {
   width: 70%;
+  margin-bottom: 40px;
   border-color: #fff;
 }
 
@@ -358,74 +357,75 @@ footer {
 
 /* -------------------About Us page------------------ */
 
-.team-section {
-  text-align: center;
-  background: #34495e;
-  padding: 60px;
+.wrapper{
+  margin-top: 20%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #34495e;
 }
 
-.team-section h1 {
+.wrapper h1{
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: #ffffff;
   font-size: 75px;
-  margin-bottom: 30px;
-}
-
-.team-section h2 {
-  font-family: "Roboto", sans-serif;
-  color: #ffffff;
   font-weight: 300;
-  font-size: 40px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.profiles {
-  margin-bottom: 40px;
-}
-
-.profiles a {
-  display: inline-block;
-  margin: 0 30px;
-  width: 250px;
-  height: 250px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin-top: 20px;
-}
-
-.profiles a img {
-  width: 100%;
-  filter: grayscale(100%);
-  transition: 0.5s all;
-}
-
-.bio-section {
-  width: 600px;
-  margin: auto;
-  font-size: 20px;
   color: #fff;
-  text-align: justify;
-  height: 0;
-  overflow: hidden;
-  transition: 0.5s all;
-}
-
-.bio-section:target {
-  height: auto;
-}
-
-.name {
-  display: block;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+  padding-top: 5%;
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 24px;
-  color: #fff;
 }
+
+.team-section {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team-section .team-profile {
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.team-section .team-profile h3 {
+  color: #34495e;
+  font-size: 26px;
+  margin-top: 140px;
+}
+
+.team-section .team-profile p.position {
+  color: #707b77;
+  margin: 12px 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.team-section .team-profile .picture {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.team-section .team-profile .picture img{
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
 
 /* -------------------Services page------------------ */
 
@@ -540,24 +540,13 @@ footer {
 
 /* -------------------Media Queries------------------ */
 
-@media screen and (max-width: 600px) {
-  .header-title {
-    display: none;
-  }
-  .container-fluid {
-    width: 100%;
-  }
-}
-
 @media (min-width: 968px) {
   .center-form {
     padding-top: 30px;
     min-height: 240px;
     margin: 0 auto;
   }
-
   }
-}
 
 @media screen and (min-width: 200px) and (max-width: 1200px) {
   .header-title {
@@ -569,9 +558,6 @@ footer {
   .menu-boxes {
     width: 100%;
   }
-  .service-box {
-    max-width: 100%;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -579,6 +565,18 @@ footer {
     display: none;
   }
   .service-box {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .service-box{
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .service-box{
     max-width: 100%;
   }
 }
@@ -586,15 +584,6 @@ footer {
 @media screen and (max-width: 600px) {
   .header-title {
     display: none;
-  }
-  .service-box {
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 960px) and (max-width: 1024px) {
-  .container-wrapper {
-    max-width: 100%;
   }
 }
 
@@ -608,12 +597,11 @@ footer {
   .container-wrapper {
     display: none;
   }
-
   .hero-inner h1 {
     font-size: 60px;
   }
-
   .hero-inner h2 {
     display: none;
   }
 }
+
