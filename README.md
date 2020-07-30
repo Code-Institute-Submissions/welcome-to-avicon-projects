@@ -59,7 +59,7 @@ Avicon Projects is a newly established company founded in 2017 as a result of id
 
 *   ### Wireframes
 
-    -   Home Page Wireframe - [View](https://github.com/)
+    -   Home Page Wireframe - [View](https://https://github.com/Roberto-Cadilhe/welcome-to-avicon-projects/blob/master/avicon%20home.pdf)
 
     -   Mobile Wireframe - [View](https://github.com/)
 
@@ -73,10 +73,11 @@ Avicon Projects is a newly established company founded in 2017 as a result of id
 
 ## Technologies Used
 
-### Languages Used
+### The technologies I used are:
 
--   [HTML5](https://en.wikipedia.org/wiki/HTML5)
--   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   HTML5 is the markup language used for rendering the website. [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   CSS3 is the style sheet language used to style the HTML website. [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   Bootstrap 4 Framework for the mobile responsiveness and grid layout of the website. I also used Bootstrap's core CSS for most of the styling and layout, buttons and forms. [Bootstrap](https://getbootstrap.com/)
 
 ### Frameworks, Libraries & Programs Used
 
@@ -99,10 +100,19 @@ Avicon Projects is a newly established company founded in 2017 as a result of id
 
 ## Testing
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+1. Used [HTML Validator](https://validator.w3.org/) to check the markup on each page. "Document checking completed. No errors or warnings to show."
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+1. Used [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) to check CSS3 for any errors. "Congratulations! No Error Found. This document validates as CSS level 3 + SVG !"
+
+1. Used [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) to check for markup errors.
+
+1. I ran my page on web.dev and this is the report.
+
+1. Contact form text input fields tested and work as intended.
+
+1. The website is responsive on majority of mobile devices.
+
+
 
 ### Testing User Stories from User Experience (UX) Section
 
