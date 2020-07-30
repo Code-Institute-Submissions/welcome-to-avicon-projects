@@ -1,4 +1,4 @@
-<img src="assets/images/logo.jpg" height="250" width="300"/>
+<img src="assets/images/avicon_new.png" height="250" width="300"/>
 
 <!-- Avicon Projects company logo -->
 
@@ -88,8 +88,6 @@ Avicon Projects is a newly established company founded in 2017 as a result of id
     - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
 1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
-1. [jQuery:](https://jquery.com/)
-    - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
