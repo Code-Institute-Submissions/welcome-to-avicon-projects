@@ -106,7 +106,7 @@ Avicon Projects is a newly established company founded in 2017 as a result of id
 
 1. Used [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) to check for markup errors.
 
-1. I ran my page on web.dev and this is the report.
+1. I ran my page on [web.dev](https://web.dev/) and this is the [report](https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2F8000-eb372878-e993-461e-8447-6668e5e23b43.ws-us02.gitpod.io%2F).
 
 1. Contact form text input fields tested and work as intended.
 
