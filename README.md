@@ -113,9 +113,10 @@ Avicon Projects is a newly established company founded in 2017 as a result of id
 
 ## Testing
 
-1. Used [HTML Validator](https://validator.w3.org/) to check the markup on each page. "Document checking completed. No errors or warnings to show."
+1. Used [HTML Validator](https://validator.w3.org/) to check the markup on each page and I received the message "Document checking completed. No errors or warnings to show."
 
-1. Used [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) to check CSS3 for any errors. "Congratulations! No Error Found. This document validates as CSS level 3 + SVG !"
+1. Used [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) to check CSS3 for any errors and I received the message "Congratulations! No Error Found.
+This document validates as CSS level 3 + SVG ! 
 
 1. Used [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) to check for markup errors.
 
@@ -218,13 +219,13 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/Roberto-Cadilhe/welcome-to-avicon-projects.git
 ```
 
 7. Press Enter. Your local clone will be created.
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/Roberto-Cadilhe/welcome-to-avicon-projects.git
 > Cloning into `CI-Clone`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
@@ -238,24 +239,36 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
-- The full-screen hero image code came from this [StackOverflow post](https://stackoverflow.com)
+- [StackOverflow post](https://stackoverflow.com): Used to find relevant answers and support.
+
+- [W3Schools](https://www.w3schools.com/): W3Schools library used for html layout and key components such as forms, buttons, layout etc.
 
 - [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 
-- [MDN Web Docs](https://developer.mozilla.org/) : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel#Pattern_validation)
+- [Atom Editor](https://atom.io/): Atom Editor was used to copy code for debugging. This was extremely helpful when working with media queries.
+
+- [DarkCode](https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw) and [Webflow](https://www.youtube.com/channel/UCELSb-IYi_d5rYFOxWeOz5g): Video tutorials used to help with styling ideas and layout.
 
 ### Content
 
 - All content was written by the developer.
 
-- Psychological properties of colours text in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
-
 ### Media
 
-- All Images were created by the developer.
+- All Images were created or sourced by the developer.
+
+- Logo was developed using [Photoshop](https://www.adobe.com/ie/products/photoshop.html) 
+
+- Team member images, customer review images, and the services hero image were taken by the developer.
+
+- Hero image for the home page and contact page were sourced through [GoogleImages](https://images.google.com/).
 
 ### Acknowledgements
 
-- My Mentor for continuous helpful feedback.
+- My Mentor, Nishant Kumar,  for the continuous helpful feedback and multiple mentor sessions.
 
 - Tutor support at Code Institute for their support.
+
+- Slack Community and the user-centric-frontend channel for the support and quick links.  
+
+- Lynn University colleagues and faculty support.
